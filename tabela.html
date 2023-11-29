@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h1>Logo</h1>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Formulario</a></li>
+                     
+                    </ul>
+                </div>
+                <div class="login-button">
+                    <button><a href="Logar.html">Entrar</a></button>
+                </div>
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="form.html" class="nav-link">Formulario</a></li>
+                  
+                </ul>
+                <div class="login-button">
+                    <button><a href="Logar.html">Entrar</a></button>
+                </div>
+            </div>
+    
+        </header>
+        
+        <button class="btn-nome">Adicione Aluno</button>
+        
+    
+        <main class="conteudo">
+            <h2 class="conteudo__titulo">Alunos</h2>
+            <hr class="separador">
+            <table class="tabela">
+                <tr class="tabela__linha">
+                    <th>Alunos</th>
+                    <th>Média</th>
+                    <th>Frequência</th>
+                    <th>Situação</th>
+                </tr>
+                <tr class="tabela__linha_aluno">
+                    <td class="aluno__nome">Carolina</td>
+                    <td class="aluno__nota">54</td>
+                    <td class="aluno__frequencia">78%</td>
+                    <td class="aluno__situacao">Reprovado(a)</td>
+                </tr>
+                <tr class="tabela__linha_aluno">
+                    <td class="aluno__nome">Luiz</td>
+                    <td class="aluno__nota">56</td>
+                    <td class="aluno__frequencia">81%</td>
+                    <td class="aluno__situacao">Reprovado(a)</td>
+                </tr>
+                <tr class="tabela__linha_aluno">
+                    <td class="aluno__nome">Matheus</td>
+                    <td class="aluno__nota">84</td>
+                    <td class="aluno__frequencia">86%</td>
+                    <td class="aluno__situacao">Aprovado(a)</td>
+                </tr>
+                <tr class="tabela__linha_aluno">
+                    <td class="aluno__nome">Rafael</td>
+                    <td class="aluno__nota">59</td>
+                    <td class="aluno__frequencia">75%</td>
+                    <td class="aluno__situacao">Reprovado(a)</td>
+                </tr>
+                <tr class="tabela__linha_aluno">
+                    <td class="aluno__nome">Julia</td>
+                    <td class="aluno__nota">94</td>
+                    <td class="aluno__frequencia">98%</td>
+                    <td class="aluno__situacao">Aprovado(a)</td>
+                </tr>
+                <tr class="tabela__linha aluno">
+                    <td id="campo_vazio_nome" class="aluno__nome">---</td>
+                    <td id="campo_vazio_nota" class="aluno__nota">---</td>
+                    <td id="campo_vazio_frequencia" class="aluno__frequencia">---</td>
+                    <td id="campo_vazio_situacao" class="aluno__situacao">--</td>
+                </tr>
+            </table>
+    
+            <input type="button" id="botao" value="Verificar Situação" onclick="verificaSituacao()">
+        </main>
+        
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/tabela.js"></script>
+</body>
+</html>
